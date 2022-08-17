@@ -5,14 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Site brincando</title>
+    <title>Matemática</title>
 </head>
 <body>
+    <h1>Matemática</h1>
     <section>
-        <h1>Brincado com o Site</h1>
+        <h2 class="x">Ex: x = <sup> - b &plusmn;&radic;&Delta;</sup><sub>2.a</sub></h2>
+        <p>Fómula de Bhaskara</p>
+        <div>
+            <h1 class="x2"> x = <sup> - <input type="number" id="xb"> &plusmn;&radic;<input type="number" id="xd"></sup><sub>2.<input type="number" id="xa"></sub></h1>
+        </div>
+        <div>
+            X1 = <div id="telaX1"><span class="tlX">?</span></di>
+        </div>
+        <div>
+            X2 = <div id="telaX2"><span class="tlX">?</span></div>
+        </div>
+        <input type="button" class="bt" value="Calcular" onclick="xCalcular()">
+    </section>
+    <section>
+       
         <h2>Ex: &Delta; = <span class="ep">b</span><sup>2</sup> - 4 . <span class="ep">a</span> . <span class="ep">c</span></h2>
         <div id="delta">
-            <p id="pd"><span id="gd">&Delta;</span> <span>=</span> <input type="number" id="b"><sup><span id="pq"> 2</span></sup> <span> - 4 .</span> <input type="number" id="a"> <span>.</span> <input type="number" id="c">  <div id="telaDelta"> &Delta; = ? </div>  <input type="button" id="btD" value="Calcular" onclick="deltaCalcular()"></p>
+            <p id="pd"><span id="gd">&Delta;</span> <span>=</span> <input type="number" id="b"><sup><span id="pq"> 2</span></sup> <span> - 4 .</span> <input type="number" id="a"> <span>.</span> <input type="number" id="c">  <div id="telaDelta"> &Delta; = ? </div>  <input type="button" id="btD" value="Delta" onclick="deltaCalcular()"></p>
         
         </div>
      
@@ -20,25 +35,25 @@
         <input type="number" id="n1" value=""> <span>+</span>
         <input type="number" id="n2" value=""><span> =</span>
         <div id="tela"><span class="tl">?</span></div>
-        <input type="button" class="bt" value="Calcular" onclick="somar()">
+        <input type="button" class="bt" value="Somar" onclick="somar()">
         </div>
         <div class="d">
         <input type="number" id="n3" value=""><span> -</span>
         <input type="number" id="n4" value=""> <span>=</span>
         <div id="tela2"><span class="tl">?</span></div>
-        <input type="button" class="bt" value="Calcular" onclick="subtrair()">
+        <input type="button" class="bt" value="Subtrair" onclick="subtrair()">
         </div>
         <div class="d">
         <input type="number" id="n5" value=""> <span>.</span>
         <input type="number" id="n6" value=""> <span>=</span>
         <div id="tela3"><span class="tl">?</span></div>
-        <input type="button" class="bt" value="Calcular" onclick="multiplicar()">
+        <input type="button" class="bt" value="Multiplicar" onclick="multiplicar()">
         </div>
         <div class="d">
         <input type="number" id="n7" value=""><span> /</span>
         <input type="number" id="n8" value=""> <span>=</span>
         <div id="tela4"><span class="tl">?</span></div>
-        <input type="button" class="bt" value="Calcular" onclick="dividir()">
+        <input type="button" class="bt" value="Dividir" onclick="dividir()">
         </div>
     </section>
 

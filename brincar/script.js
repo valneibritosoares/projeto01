@@ -1,3 +1,8 @@
+
+
+let ax = document.querySelector('#xa');
+let bx = document.querySelector('#xb');
+let dx = document.querySelector('#xd');
 let a = document.querySelector('#a');
 let b = document.querySelector('#b');
 let c = document.querySelector('#c');
@@ -11,9 +16,19 @@ let n7 = document.querySelector('#n7');
 let n8 = document.querySelector('#n8');
 
 
+function xCalcular() {
+        let x1 = (- Number(bx.value) + Math.sqrt(Number(dx.value))) / (2 * Number(ax.value));
+        let x2 = (- Number(bx.value) - Math.sqrt(Number(dx.value))) / (2 * Number(ax.value));
+        if(Number(dx.value) < 0 ) {
+                x1 = "Sem Raiz Real"
+                x2 = "Sem Raiz Real"
+        }
+        document.querySelector('#telaX1').innerHTML= `<div><span class="tlX"> ${x1} </span></div>`
+        document.querySelector('#telaX2').innerHTML= `<div><span class="tlX"> ${x2} </span></div>`
+}
+
 function deltaCalcular() {
         let delta = (Number(b.value) *  Number(b.value)) - 4 * (Number(a.value) * Number(c.value));
-        
         document.querySelector('#telaDelta').innerHTML= `<div>&Delta; = ${delta}</div>`
 }
 
@@ -40,4 +55,6 @@ function dividir() {
                 document.querySelector('#tela4').innerHTML= `<div> <span class="tl">0</span></div>`
         }     
 }
+
+
 
