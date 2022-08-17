@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site brincando</title>
+</head>
+<body>
+    <section>
+        <h1>Brincado com o Site</h1>
+        <h2>Ex: &Delta; = <span class="ep">b</span><sup>2</sup> - 4 . <span class="ep">a</span> . <span class="ep">c</span></h2>
+        <div id="delta">
+            <p id="pd"><span id="gd">&Delta;</span> <span>=</span> <input type="number" id="b"><sup><span id="pq"> 2</span></sup> <span> - 4 .</span> <input type="number" id="a"> <span>.</span> <input type="number" id="c">  <div id="telaDelta"> &Delta; = ? </div>  <input type="button" id="btD" value="Calcular" onclick="deltaCalcular()"></p>
+        
+        </div>
+     
+        <div class="d">
+        <input type="number" id="n1" value=""> <span>+</span>
+        <input type="number" id="n2" value=""><span> =</span>
+        <div id="tela"><span class="tl">?</span></div>
+        <input type="button" class="bt" value="Calcular" onclick="somar()">
+        </div>
+        <div class="d">
+        <input type="number" id="n3" value=""><span> -</span>
+        <input type="number" id="n4" value=""> <span>=</span>
+        <div id="tela2"><span class="tl">?</span></div>
+        <input type="button" class="bt" value="Calcular" onclick="subtrair()">
+        </div>
+        <div class="d">
+        <input type="number" id="n5" value=""> <span>.</span>
+        <input type="number" id="n6" value=""> <span>=</span>
+        <div id="tela3"><span class="tl">?</span></div>
+        <input type="button" class="bt" value="Calcular" onclick="multiplicar()">
+        </div>
+        <div class="d">
+        <input type="number" id="n7" value=""><span> /</span>
+        <input type="number" id="n8" value=""> <span>=</span>
+        <div id="tela4"><span class="tl">?</span></div>
+        <input type="button" class="bt" value="Calcular" onclick="dividir()">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <footer><p>Site criado por: VBS-Cod<sup>&copy;</sup> </p></footer>
+</body>
+</html>
